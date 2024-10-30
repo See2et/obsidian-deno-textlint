@@ -1,0 +1,11 @@
+{
+	"id": "textlint-deno",
+	"name": "textlint-deno",
+	"version": "0.1.0",
+	"minAppVersion": "0.15.0",
+	"description": "textlint by Deno",
+	"author": "Obsidian",
+	"authorUrl": "https://x.com/see2et",
+	"fundingUrl": "https://patreon/see2et",
+	"isDesktopOnly": false
+}
