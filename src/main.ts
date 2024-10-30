@@ -8,8 +8,20 @@ export default class textlintDeno extends Plugin {
 		await this.loadSettings();
 		this.addSettingTab(new SettingTab(this.app, this));
 
+		this.registerCommands();
+
 		this.addRibbonIcon("dice", "Greet", () => {
 			new Notice("Hello, world!");
+		});
+	}
+
+	registerCommands() {
+		this.addCommand({
+			id: "textlint-text",
+			name: "Textlint Text",
+			editorCallback: (editor, view) => {
+				new Notice("Textlint Text");
+			},
 		});
 	}
 
