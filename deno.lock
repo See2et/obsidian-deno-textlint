@@ -2,6 +2,7 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@textlint/kernel@14.3.0": "npm:@textlint/kernel@14.3.0",
       "npm:esbuild@0.24.0": "npm:esbuild@0.24.0",
       "npm:ignore@6.0.2": "npm:ignore@6.0.2",
       "npm:obsidian@1.7.2": "npm:obsidian@1.7.2_@codemirror+state@6.4.1_@codemirror+view@6.34.1"
@@ -115,6 +116,59 @@
         "integrity": "sha512-7IAFPrjSQIJrGsK6flwg7NFmwBoSTyF3rl7If0hNUFQU4ilTsEPL6GuMuU9BfIWVVGuRnuIidkSMC+c0Otu8IA==",
         "dependencies": {}
       },
+      "@textlint/ast-node-types@14.3.0": {
+        "integrity": "sha512-baDgKcA8MeO55I2+LNc9FTAJ/aUKlxN6DgM5B511tT9kDwECXRk+iYi/H+oaP25z5Zq3FqrL6n7mmyfFWDUWkQ==",
+        "dependencies": {}
+      },
+      "@textlint/ast-tester@14.3.0": {
+        "integrity": "sha512-K1TbF1Kko1XAKCWuFY/TkZO521ZWv2DAHu4JYsqqY/PnqqySHZorjSG78EfYBhkVq1E3ktprlAJmp8GNmpoYWQ==",
+        "dependencies": {
+          "@textlint/ast-node-types": "@textlint/ast-node-types@14.3.0",
+          "debug": "debug@4.3.7"
+        }
+      },
+      "@textlint/ast-traverse@14.3.0": {
+        "integrity": "sha512-1YA5M2T+KeIHC0br5FwhkTwuLEUxkf5K5QtXJmXSF0Mf06ZlLfZ44RMlKYD3ElmzG+TmpmFdKIs4FzFSJRtslw==",
+        "dependencies": {
+          "@textlint/ast-node-types": "@textlint/ast-node-types@14.3.0"
+        }
+      },
+      "@textlint/feature-flag@14.3.0": {
+        "integrity": "sha512-wWKbyHpmwxEEcyoBMd2u6GB5bw7vJ2a68HmBRknUABFL7vvp8JAzf4D/I2cLXgV06OoMbWE+hnV2CInayJiCpA==",
+        "dependencies": {}
+      },
+      "@textlint/kernel@14.3.0": {
+        "integrity": "sha512-RLkIJjP+GtrLmjLtAYSCORKF55z5wtw2E9Vb4h3RSQLjzYopQ3s9N1LbUwLJDr8tz0AphtOb6t1efF3d+NIemw==",
+        "dependencies": {
+          "@textlint/ast-node-types": "@textlint/ast-node-types@14.3.0",
+          "@textlint/ast-tester": "@textlint/ast-tester@14.3.0",
+          "@textlint/ast-traverse": "@textlint/ast-traverse@14.3.0",
+          "@textlint/feature-flag": "@textlint/feature-flag@14.3.0",
+          "@textlint/source-code-fixer": "@textlint/source-code-fixer@14.3.0",
+          "@textlint/types": "@textlint/types@14.3.0",
+          "@textlint/utils": "@textlint/utils@14.3.0",
+          "debug": "debug@4.3.7",
+          "fast-equals": "fast-equals@4.0.3",
+          "structured-source": "structured-source@4.0.0"
+        }
+      },
+      "@textlint/source-code-fixer@14.3.0": {
+        "integrity": "sha512-KJJoiN1Ha9R6tJrg3KHnYkq0s86D53PUjYxxCYJxo9Q8yTcXx+aXPspvgW+qGD+qcQxjarqbLl6m8uRlbyrg3Q==",
+        "dependencies": {
+          "@textlint/types": "@textlint/types@14.3.0",
+          "debug": "debug@4.3.7"
+        }
+      },
+      "@textlint/types@14.3.0": {
+        "integrity": "sha512-zvPCQUpK1hOQA6Bg4XLYvKbOvFcQT65Nm25wsDdOGRgOvZbUzA+DJkiaH9Z8DAaJx83tTknIeLl4qwu97Hw1Ew==",
+        "dependencies": {
+          "@textlint/ast-node-types": "@textlint/ast-node-types@14.3.0"
+        }
+      },
+      "@textlint/utils@14.3.0": {
+        "integrity": "sha512-Q7bKiPobKCDXM5z+xByLZzSjcOBhvlDufQGHNgHR8EFie2/AFc68cN8RYCY0MmwCMBMuHuYaOzfIOpQpK9oTcQ==",
+        "dependencies": {}
+      },
       "@types/codemirror@5.60.8": {
         "integrity": "sha512-VjFgDF/eB+Aklcy15TtOTLQeMjTo07k7KAjql8OK5Dirr7a6sJY4T1uVBDuTVG9VEmn1uUsohOpYnVfgC6/jyw==",
         "dependencies": {
@@ -129,6 +183,16 @@
         "integrity": "sha512-ypzHFE/wBzh+BlH6rrBgS5I/Z7RD21pGhZ2rltb/+ZrVM1awdZwjx7hE5XfuYgHWk9uvV5HLZN3SloevCAp3Bw==",
         "dependencies": {
           "@types/estree": "@types/estree@1.0.6"
+        }
+      },
+      "boundary@2.0.0": {
+        "integrity": "sha512-rJKn5ooC9u8q13IMCrW0RSp31pxBCHE3y9V/tp3TdWSLf8Em3p6Di4NBpfzbJge9YjjFEsD0RtFEjtvHL5VyEA==",
+        "dependencies": {}
+      },
+      "debug@4.3.7": {
+        "integrity": "sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==",
+        "dependencies": {
+          "ms": "ms@2.1.3"
         }
       },
       "esbuild@0.24.0": {
@@ -160,12 +224,20 @@
           "@esbuild/win32-x64": "@esbuild/win32-x64@0.24.0"
         }
       },
+      "fast-equals@4.0.3": {
+        "integrity": "sha512-G3BSX9cfKttjr+2o1O22tYMLq0DPluZnYtq1rXumE1SpL/F/SLIfHx08WYQoWSIpeMYf8sRbJ8++71+v6Pnxfg==",
+        "dependencies": {}
+      },
       "ignore@6.0.2": {
         "integrity": "sha512-InwqeHHN2XpumIkMvpl/DCJVrAHgCsG5+cn1XlnLWGwtZBm8QJfSusItfrwx81CTp5agNZqpKU2J/ccC5nGT4A==",
         "dependencies": {}
       },
       "moment@2.29.4": {
         "integrity": "sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==",
+        "dependencies": {}
+      },
+      "ms@2.1.3": {
+        "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
         "dependencies": {}
       },
       "obsidian@1.7.2_@codemirror+state@6.4.1_@codemirror+view@6.34.1": {
@@ -175,6 +247,12 @@
           "@codemirror/view": "@codemirror/view@6.34.1",
           "@types/codemirror": "@types/codemirror@5.60.8",
           "moment": "moment@2.29.4"
+        }
+      },
+      "structured-source@4.0.0": {
+        "integrity": "sha512-qGzRFNJDjFieQkl/sVOI2dUjHKRyL9dAJi2gCPGJLbJHBIkyOHxjuocpIEfbLioX+qSJpvbYdT49/YCdMznKxA==",
+        "dependencies": {
+          "boundary": "boundary@2.0.0"
         }
       },
       "style-mod@4.1.2": {
@@ -190,6 +268,7 @@
   "remote": {},
   "workspace": {
     "dependencies": [
+      "npm:@textlint/kernel@14.3.0",
       "npm:esbuild@0.24.0",
       "npm:ignore@6.0.2",
       "npm:obsidian@1.7.2"
